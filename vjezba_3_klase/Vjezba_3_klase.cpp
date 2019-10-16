@@ -20,18 +20,15 @@ int main()
 		upis();
 	}
 	system("cls");
+
 	for (int x = 0; x < vec.size(); x++) {
 		Racunalo R = (Racunalo)vec.at(x);
 		cout << x << ". ";
 		cout << R.Ispis() << endl;
+		cout << "////////////////////////////////////////////////////////////////////////////////////" << endl;
 	}
 
-	Racunalo R; //naredba koja kreira objekt R
-	R.setNaziv("Asus");
-	R.setCijena(599.99);
-	R.setRam(16);
-	cout << R.Ispis();
-	system("pause");
+
 }
 
 void upis() {
@@ -44,8 +41,8 @@ void upis() {
 	cin >> podatak;
 	R.setCijena(stod(podatak));
 	cout << "Upisi RAM: ";
-	cout << endl;
 	cin >> podatak;
+	cout << endl;
 	R.setRam(stoi(podatak));
 	vec.push_back(R);
 }
@@ -61,3 +58,4 @@ void ispis() {
 		br++;
 	}
 }
+
