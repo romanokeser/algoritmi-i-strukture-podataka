@@ -42,3 +42,15 @@ void upis() {
 	vec.push_back(R);
 }
 
+	//funkcija ispis()
+
+//void ispis() {
+//	system("cls");
+//	int br = 1;
+//	for (int x = 0; x < vec.size(); x++) {
+//		Racunalo R = (Racunalo)vec.at(x);
+//		cout << br << ". " << "\n";
+//		cout << R.Ispis();
+//		br++;
+//	}
+//}
