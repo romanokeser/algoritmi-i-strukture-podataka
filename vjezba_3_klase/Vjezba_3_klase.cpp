@@ -59,3 +59,37 @@ void ispis() {
 	}
 }
 
+Racunalo odrediNajskupljeRacunalo() {
+    double maxCijena = 0;
+    int maxPos = 0;
+    for(int i = 0; i < vec.size(); i++){
+        if(vec.at(i).getCijena() > maxCijena){
+            maxCijena = vec.at(i).getCijena();
+            maxPos = i;
+        }
+    }
+    return vec.at(maxPos);
+};
+
+Racunalo najjeftinijeRacunalo();    //slicno ovom prije
+
+
+Racunalo traziRacunaloPoNazivu(string naziv){
+    for(int i = 0; i < vec.size(); i++){
+        if(vec.at(i).getNaziv() == naziv){
+            return vec.at(i);
+        }
+    }
+}
+
+void brisiRacunaloPoNazivu(string naziv);   //slicno prije
+
+
+double prosjecnaCijenaRacunala(){
+    double zbroj = 0;
+    for(int i = 0; i < vec.size(); i++){
+        zbroj += vec.at(i).getCijena();
+    }
+    double prosjek = (double)(zbroj/vec.size());
+    return prosjek;
+}
